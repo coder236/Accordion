@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 80%;
+	box-sizing: border-box;
+	margin-left: 10%;
+	padding: 5%;
+	font-size: 25px;
+}
+
+ol,li{
+	padding:20px;
+	line-height:5px;
+}
+
+/* Styling of button */
+.accordion{
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	width: 100%;
+	padding: 18px;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s ease-out;
+	font-size: 25px;
+	border-bottom: solid;
+}
+
+.active, .accordion:hover{
+	background-color: #ccc;
+}
+
+/* Adding + symbol on right */
+.accordion:after{
+	content: '\002B';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+	border-bottom: none;
+}
+.active:after{
+	content: "\2212";
+}
+
+/* Styling hidden content */
+.panel{
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+}
